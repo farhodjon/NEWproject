@@ -111,7 +111,7 @@ const Footer = () => {
             <Right>
                 <Title>Contact</Title>
                 <ContactItem> <Room style={{marginRight:"10px"}}/> 622 Lorem ipsum dolor sit amet 98336</ContactItem>
-                <ContactItem> <Phone style={{marginRight:"10px"}}/> +998972151995</ContactItem>
+                <ContactItem> <Phone style={{marginRight:"10px"}}/> +998972159195</ContactItem>
                 <ContactItem><MailOutline style={{marginRight:"10px"}}/>contact@New Project.uz</ContactItem>
                  <Payment src={Image} alt='payment'/>
             </Right>
