@@ -2,15 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import { Search, ShoppingCartOutlined } from '@mui/icons-material'
 import { Badge } from '@mui/material';
+import {mobile} from '../responsive'
+
 const Container = styled.div`
         height:60px;
+  ${mobile({height:"50px"})}
 
 `;
 const Wrapper = styled.div`
 padding: 10px 20px;
 display:flex;
 align-items: center;
-justify-content:space-between
+justify-content:space-between;
+${mobile({padding:"10px 0px"})}
 `;
 
 const Left = styled.div` 
@@ -21,7 +25,8 @@ align-items: center;
 
 const Language = styled.span`
 font-size:14px;
-cursor:pointer; 
+cursor:pointer;
+${mobile({display:"none"})} 
 `;
 
 const SearchContainer = styled.div`
@@ -34,6 +39,7 @@ padding: 5px;
 `;
 const Input = styled.input`
     border: none;
+    ${mobile({width:"50px"})}
 `;
 
 const Center = styled.div`
@@ -65,13 +71,13 @@ const Navbar = () => {
                 <Left>
                     <Language>UZ</Language>
                     <SearchContainer>
-                        <Input />
+                        <Input placeholder='Search' />
                         <Search style={{color:"gray", fontSize:16}}/>
                     </SearchContainer>
                 </Left>
                 <Center>
                     <Logo>
-                        New Project.uz
+                    New Project.uz
                     </Logo>
                 </Center>
                 <Right>
