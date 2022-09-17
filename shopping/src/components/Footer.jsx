@@ -1,8 +1,12 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@mui/icons-material';
 import styled from 'styled-components'
  import Image from "../components/IMAGE/Payment-Background-PNG.png"
+import { mobile } from './../responsive';
+
+
 const Container = styled.div`
 display: flex;
+${mobile({flexDirection:"column"})}
 `;
 
 const Left = styled.div`
@@ -13,8 +17,9 @@ padding: 20px;
 `;
 const Logo = styled.h1``;
 
-const Desc = styled.pre`
+const Desc = styled.p`
 margin: 20px 0;
+text-align: left;
 
 `;
 
@@ -38,6 +43,7 @@ margin-right: 20px;
 const Center = styled.div`
 flex: 1;
 padding: 20px;
+${mobile({display:"none"})}
 `;
 const Title = styled.h3`
 margin-bottom: 30px;
@@ -57,6 +63,7 @@ margin-bottom: 10px;
 const Right = styled.div`
 padding: 20px;
 flex: 1 ;
+${mobile({backgroundColor:"#fff8f8"})}
 `;
 const ContactItem =styled.div`
 margin-bottom: 20px;
@@ -72,10 +79,10 @@ const Footer = () => {
             <Left>
                 <Logo>New Project.uz</Logo>
                 <Desc>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br /> Fugit, aperiam
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, aperiam
                     veniam velit nulla
-                    ullam laudantium, atque <br /> corrupti
-                    architecto ipsam  necessitatibus consequatur natus <br /> hic est
+                    ullam laudantium, atque  corrupti
+                    architecto ipsam  necessitatibus consequatur natus  hic est
                     doloribus nisi optio minima. Lorem, ipsum.
                 </Desc>
                 <SocialContainer>

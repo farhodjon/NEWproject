@@ -48,7 +48,7 @@ text-align: center;
 `;
 const Logo = styled.h1`
 font-weight: bold;
-
+${mobile({fontSize:"24px"})}
 `;
 
 const Right = styled.div`
@@ -56,13 +56,14 @@ flex:1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
-
+${mobile({flex:2, justifyContent:"center"})}
 `
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    ${mobile({fontSize:"12px", marginLeft:"10px"})}
 `
 const Navbar = () => {
     return (
@@ -77,7 +78,7 @@ const Navbar = () => {
                 </Left>
                 <Center>
                     <Logo>
-                    New Project.uz
+                   LAMA.
                     </Logo>
                 </Center>
                 <Right>
